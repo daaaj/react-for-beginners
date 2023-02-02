@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App_movie.js';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    //<React.StrictMode>
-    //=> 이게 두번 감싸져 있으면 두번 랜더링 되더라,,,???
+  <React.StrictMode>
     <App />
-    //</React.StrictMode>
+  </React.StrictMode>
 );
 
-/*
-//console.log(parseInt());
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-);
-*/
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
