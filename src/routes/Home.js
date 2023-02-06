@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import Movie from './components/Movie';
+import Movie from '../components/Movie';
 
+// App.js 파일안에꺼 그대로 가져온거야!!
 function Home() {
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
