@@ -14,7 +14,9 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route path="/movie">
+                <Route path="/movie/:id">
+                    {/* 변수사용할꺼다는 :poo 이렇게 작성하기_router가 넘거줌
+                그럼 Detail에서 useParams()로 받아올 수 있다 */}
                     <Detail />
                 </Route>
                 <Route path="/">
